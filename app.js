@@ -2,9 +2,10 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const path = require("path");
+require('dotenv').config()
 
 const app = express();
-console.log('app js file');
+console.log('app js file', process.env.MONGO_ATLAS_PW);
 mongoose
   .connect(
     "mongodb+srv://trofimserhii:" + process.env.MONGO_ATLAS_PW + "@cluster0.5aho0xz.mongodb.net/posts"
