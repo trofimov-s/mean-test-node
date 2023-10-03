@@ -36,4 +36,4 @@ const authRouter = require("./routes/user");
 app.use("/api/posts", postRouter);
 app.use("/api/user", authRouter);
 
-app.listen(process.env.POST || 3000);
+app.listen(process.env.PORT || 3000);
