@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 
 const app = express();
-
+console.log('app js file');
 mongoose
   .connect(
     "mongodb+srv://trofimserhii:" + process.env.MONGO_ATLAS_PW + "@cluster0.5aho0xz.mongodb.net/posts"
